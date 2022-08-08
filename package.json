@@ -20,6 +20,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
     "@mui/styles": "^5.9.3",
+    "@sanity/client": "^3.3.3",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4"
   }

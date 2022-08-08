@@ -1,6 +1,7 @@
 import { Alert, CircularProgress, Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
+import ProductItem from '../components/ProductItem';
 import client from '../utils/client';
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
             <Grid container spacing={3}>
               {products.map((product) => (
                 <Grid item md={4} key={product.slug}>
-                  <Typography>{product.name}</Typography>
+                  <ProductItem product={product} />
                 </Grid>
               ))}
             </Grid>
